@@ -1,6 +1,8 @@
+const util = require('./util');
+
 class HomeController {
     async index(req, res) {
-        return res.send("Pagina de inicio");
+        return util.render('home', res);
     }
 }
 
